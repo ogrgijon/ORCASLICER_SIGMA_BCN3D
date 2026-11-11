@@ -1,43 +1,53 @@
-# Perfiles de BCN3D Sigma R18 para OrcaSlicer
+# BCN3D Sigma R18 en OrcaSlicer
+
+Perfiles de impresora para laminar modelos 3D con la **BCN3D Sigma R18** usando **OrcaSlicer**.
 
 ![Impresora BCN3D Sigma R18](BCN3D_SIGMA_ORCA_PROFILE/V.2.05/BCN3D/BCN3D%20Sigma%20R18_cover.png)
 
-Este proyecto reúne perfiles de configuración para usar la **BCN3D Sigma R18** con **OrcaSlicer**. La Sigma es una impresora 3D de doble extrusión independiente (IDEX); estos archivos permiten seleccionarla y laminar modelos con parámetros de máquina, calidad y material apropiados. No es firmware ni lo modifica.
+> **No es firmware.** Este proyecto contiene perfiles para OrcaSlicer; no instala ni actualiza el firmware de la impresora.
 
-La BCN3D Sigma forma parte de la iniciativa de hardware abierto de BCN3D. La empresa ha publicado en GitHub recursos oficiales de diseño mecánico, electrónica y firmware. Este repositorio comunitario se centra únicamente en los perfiles para OrcaSlicer y no es un proyecto oficial de BCN3D.
+## Empieza aquí
 
-### Proyectos oficiales relacionados
+1. Descarga el repositorio: pulsa **Code → Download ZIP** en GitHub y descomprime el archivo.
+2. Abre `BCN3D_SIGMA_ORCA_PROFILE/V.2.05`.
+3. Copia **todo el contenido** de esa carpeta.
+4. Pégalo dentro de la carpeta `resources\profiles` de OrcaSlicer.
+   - En una instalación habitual de Windows: `C:\Program Files\OrcaSlicer\resources\profiles`
+   - Si OrcaSlicer está instalado en otra ubicación, busca `resources\profiles` dentro de su carpeta de instalación.
+5. Reinicia OrcaSlicer y selecciona la **BCN3D Sigma R18**, la boquilla de **0,4 mm** y los perfiles de proceso y filamento que quieras usar.
 
-- [BCN3D Sigma: diseño mecánico](https://github.com/BCN3D/BCN3DSigma-Mechanics)
-- [BCN3D Sigma: electrónica](https://github.com/BCN3D/BCN3DSigma-Electronics)
-- [BCN3D Sigma: firmware](https://github.com/BCN3D/BCN3DSigma-Firmware)
-- [BCN3D Sigma: proceso de fabricación](https://github.com/BCN3D/BCN3DSigma-Process)
-- [OrcaSlicer](https://github.com/OrcaSlicer/OrcaSlicer)
+## Perfiles incluidos
 
-## Versiones y contenido
+La versión actual incluye:
 
-Las configuraciones se organizan por versión dentro de `BCN3D_SIGMA_ORCA_PROFILE`, para mantener disponibles distintas ediciones y poder añadir futuras versiones sin sobrescribir las anteriores. Cada carpeta de versión contiene el paquete completo para OrcaSlicer.
+| Tipo | Perfiles |
+|---|---|
+| Impresora | BCN3D Sigma R18, boquilla de 0,4 mm |
+| Calidad de impresión | Extra Fine (0,06 mm), Fine (0,10 mm), Normal (0,15 mm), Draft (0,20 mm) |
+| Filamento | PLA, ABS y PETG genéricos |
 
-### Versión actual: V.2.05
+## Versiones
 
-El archivo `BCN3D_SIGMA_ORCA_PROFILE/V.2.05/BCN3D.json` identifica esta configuración como la versión **02.05.00.58** para la **BCN3D Sigma R18**. Incluye:
+Cada edición se guarda en su propia carpeta dentro de `BCN3D_SIGMA_ORCA_PROFILE`, para poder conservar las versiones anteriores y añadir nuevas sin reemplazarlas.
 
-- Configuración de la BCN3D Sigma R18 con boquilla de 0,4 mm.
-- Perfiles de proceso Extra Fine (0,06 mm), Fine (0,10 mm), Normal (0,15 mm) y Draft (0,20 mm).
-- Perfiles de filamento genéricos PLA, ABS y PETG.
-- Recursos gráficos de la impresora y la superficie de impresión.
+### V.2.05 — versión de configuración 02.05.00.58
 
-## ¿Qué es OrcaSlicer?
+Esta versión está identificada en `BCN3D_SIGMA_ORCA_PROFILE/V.2.05/BCN3D.json` y contiene los perfiles indicados arriba, además de los recursos gráficos de la impresora y la superficie de impresión.
 
-OrcaSlicer es un programa de laminado (*slicer*) para impresión 3D. Convierte un modelo 3D en instrucciones de impresión (G-code), aplicando los parámetros de la impresora, el material y la calidad seleccionados. Estos perfiles permiten preparar trabajos para la Sigma R18; no actualizan el firmware de la impresora.
+## El proyecto y OrcaSlicer
 
-## Instalar los perfiles
+La BCN3D Sigma es una impresora 3D de doble extrusión independiente (IDEX). OrcaSlicer es un laminador: convierte modelos 3D en instrucciones G-code usando la impresora, el proceso y el material seleccionados.
 
-1. Descarga el repositorio como ZIP y descomprímelo.
-2. Abre la carpeta de la versión que quieras usar, por ejemplo `BCN3D_SIGMA_ORCA_PROFILE/V.2.05`, y copia **todo su contenido**.
-3. Pégalo en la carpeta `resources\profiles` de OrcaSlicer. En Windows, normalmente está en `C:\Program Files\OrcaSlicer\resources\profiles`. Si instalaste OrcaSlicer en otra ubicación, busca `resources\profiles` dentro de su carpeta de instalación.
-4. Reinicia OrcaSlicer. Selecciona la **BCN3D Sigma R18** y el perfil de boquilla de 0,4 mm; después elige el proceso y filamento que quieras usar.
+BCN3D ha publicado recursos de hardware abierto de la Sigma. Este repositorio comunitario aporta únicamente perfiles para OrcaSlicer y no está afiliado oficialmente a BCN3D.
+
+### Enlaces oficiales
+
+- [Diseño mecánico BCN3D Sigma](https://github.com/BCN3D/BCN3DSigma-Mechanics)
+- [Electrónica BCN3D Sigma](https://github.com/BCN3D/BCN3DSigma-Electronics)
+- [Firmware BCN3D Sigma](https://github.com/BCN3D/BCN3DSigma-Firmware)
+- [Proceso de fabricación BCN3D Sigma](https://github.com/BCN3D/BCN3DSigma-Process)
+- [Código fuente de OrcaSlicer](https://github.com/OrcaSlicer/OrcaSlicer)
 
 ## Compatibilidad
 
-El paquete identifica la impresora como **BCN3D Sigma R18** y está preparado para una boquilla de **0,4 mm**. Verifica los perfiles y los parámetros antes de imprimir, especialmente si tu impresora tiene otra revisión, boquilla o configuración.
+Los perfiles están preparados para la **BCN3D Sigma R18 con boquilla de 0,4 mm**. Si tu impresora tiene otra revisión o boquilla, revisa los parámetros antes de imprimir.
