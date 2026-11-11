@@ -1,5 +1,7 @@
 # Perfiles BCN3D Sigma para OrcaSlicer
 
+![Icono del proyecto](project_icon.png)
+
 Perfiles de impresora y laminado para utilizar la familia **BCN3D Sigma** con **OrcaSlicer**.
 
 ![Impresora BCN3D Sigma](BCN3D_SIGMA_ORCA_PROFILE/V.2.05/BCN3D/BCN3D%20Sigma%20R18_cover.png)
@@ -14,6 +16,8 @@ Perfiles de impresora y laminado para utilizar la familia **BCN3D Sigma** con **
 - Perfiles genéricos de filamento PLA, ABS y PETG.
 
 OrcaSlicer convierte modelos 3D en instrucciones G-code usando la impresora, el proceso y el material seleccionados. Estos perfiles ayudan a configurar esos parámetros para la familia Sigma.
+
+El icono del proyecto está disponible en [`project_icon.png`](project_icon.png).
 
 ## Instalación rápida
 
