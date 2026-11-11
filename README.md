@@ -38,11 +38,11 @@ Las versiones se guardan en carpetas separadas dentro de `BCN3D_SIGMA_ORCA_PROFI
 
 | Edición | Versión indicada en el perfil | Estado | Contenido |
 |---|---|---|---|
-| [V.2.05](BCN3D_SIGMA_ORCA_PROFILE/V.2.05/) | `02.05.00.58` | Actual | Perfiles de máquina, procesos y filamentos; recursos gráficos |
+| [V.2.05](BCN3D_SIGMA_ORCA_PROFILE/V.2.05/) | `02.05.00.59` | Actual | Perfiles de máquina, procesos y filamentos; recursos gráficos |
 
 ### Detalle de la edición actual
 
-El archivo `BCN3D.json` identifica la configuración como `02.05.00.58`. Incluye boquilla de 0,4 mm, perfiles de proceso Extra Fine (0,06 mm), Fine (0,10 mm), Normal (0,15 mm) y Draft (0,20 mm), y materiales genéricos PLA, ABS y PETG.
+El archivo `BCN3D.json` identifica la configuración como `02.05.00.59`. Incluye boquilla de 0,4 mm, perfiles de proceso Extra Fine (0,06 mm), Fine (0,10 mm), Normal (0,15 mm) y Draft (0,20 mm), y materiales genéricos PLA, ABS y PETG.
 
 ## Compatibilidad
 

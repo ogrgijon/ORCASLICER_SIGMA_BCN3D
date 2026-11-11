@@ -1,6 +1,6 @@
 {
     "name": "BCN3D",
-    "version": "02.05.00.58",
+    "version": "02.05.00.59",
     "force_update": "0",
     "description": "BCN3D Sigma R18 printer configuration",
     "machine_model_list": [
