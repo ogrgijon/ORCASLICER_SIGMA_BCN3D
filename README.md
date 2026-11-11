@@ -1,6 +1,6 @@
 # Perfiles BCN3D Sigma para OrcaSlicer
 
-![Icono del proyecto](project_icon.png)
+<img src="project_icon.png" alt="Icono del proyecto" width="64">
 
 Perfiles de impresora y laminado para utilizar la familia **BCN3D Sigma** con **OrcaSlicer**.
 
