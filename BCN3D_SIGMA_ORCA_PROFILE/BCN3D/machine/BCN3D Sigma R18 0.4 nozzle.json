@@ -1,0 +1,125 @@
+{
+    "type": "machine",
+    "name": "BCN3D Sigma R18 0.4 nozzle",
+    "inherits": "fdm_machine_common",
+    "from": "system",
+    "setting_id": "95N2HYiww4nW8esP",
+    "instantiation": "true",
+    "printer_model": "BCN3D Sigma R18",
+    "printer_variant": "0.4",
+    "printer_technology": "FFF",
+    "printer_structure": "i3",
+    "default_print_profile": "0.15mm Normal @BCN3D Sigma R18 0.4 nozzle",
+    "default_filament_profile": [
+        "Generic PLA @BCN3D Sigma R18 0.4 nozzle"
+    ],
+    "file_start_gcode": ";TIME:{print_time_total_sec}\n;Filament used:{used_filament_length}m",
+    "gcode_flavor": "marlin",
+    "use_relative_e_distances": "1",
+    "nozzle_diameter": [
+        "0.4",
+        "0.4"
+    ],
+    "extruder_offset": [
+        "0x0",
+        "0x0"
+    ],
+    "printable_area": [
+        "0x0",
+        "210x0",
+        "210x295",
+        "0x295"
+    ],
+    "printable_height": "210",
+    "machine_max_speed_x": [
+        "200",
+        "200"
+    ],
+    "machine_max_speed_y": [
+        "200",
+        "200"
+    ],
+    "machine_max_speed_z": [
+        "12",
+        "12"
+    ],
+    "machine_max_speed_e": [
+        "40",
+        "40"
+    ],
+    "machine_max_acceleration_x": [
+        "2250",
+        "2250"
+    ],
+    "machine_max_acceleration_y": [
+        "2250",
+        "2250"
+    ],
+    "machine_max_acceleration_z": [
+        "80",
+        "80"
+    ],
+    "machine_max_acceleration_e": [
+        "800",
+        "800"
+    ],
+    "machine_max_acceleration_extruding": [
+        "2000",
+        "2000"
+    ],
+    "machine_max_acceleration_retracting": [
+        "2000",
+        "2000"
+    ],
+    "machine_max_acceleration_travel": [
+        "2000",
+        "2000"
+    ],
+    "machine_max_jerk_x": [
+        "5",
+        "5"
+    ],
+    "machine_max_jerk_y": [
+        "5",
+        "5"
+    ],
+    "machine_max_jerk_z": [
+        "0.4",
+        "0.4"
+    ],
+    "machine_max_jerk_e": [
+        "5",
+        "5"
+    ],
+    "retraction_length": [
+        "4.75",
+        "4.75"
+    ],
+    "retract_length_toolchange": [
+        "2",
+        "2"
+    ],
+    "retraction_speed": [
+        "40",
+        "40"
+    ],
+    "deretraction_speed": [
+        "40",
+        "40"
+    ],
+    "wipe": [
+        "1",
+        "1"
+    ],
+    "retraction_z_hop": [
+        "0.2",
+        "0.2"
+    ],
+    "single_extruder_multi_material": "0",
+    "layer_change_gcode": "G92 E0",
+    "change_filament_gcode": "; Pulse the outgoing tool's layer fan only after both materials' initial fan-off layers\n{if previous_extruder >= 0}\nG92 E0\n{if layer_num >= close_fan_the_first_x_layers[previous_extruder]}\n{if layer_num >= close_fan_the_first_x_layers[next_extruder]}\nM106 S255\nG1 F2400 E-4.75\nG4 P500\nM106 S{fan_min_speed[next_extruder] * 255 / 100}\n{else}\nG1 F2400 E-4.75\n{endif}\n{else}\nG1 F2400 E-4.75\n{endif}\n{endif}\nT[next_extruder]\nG92 E0\n{if previous_extruder >= 0}\n{if layer_num == 1}\nG1 F200 E12\n{else}\nG1 F200 E5.5\n{endif}\nG92 E0\n\n{endif}",
+    "machine_start_gcode": "; BCN3D Sigma R18 printer setup\nM140 S{first_layer_bed_temperature[0]}\nM104 T0 S{nozzle_temperature_initial_layer[0]}\nM104 T1 S{nozzle_temperature_initial_layer[1]}\nM190 S{first_layer_bed_temperature[0]}\nM109 T0 S{nozzle_temperature_initial_layer[0]}\nM109 T1 S{nozzle_temperature_initial_layer[1]}\nG4 P10000\nG21\nG90\nM83\nM605 S3\nM108 P0\nM107\nM206 Z0.25\nG28 X0 Y0\nG28 Z0\nG1 Z1 F9000\nT{initial_extruder}\nG92 E0\nG1 F200 E12\nG92 E0\nG1 F2400 E-1.5\n{if initial_extruder == 0}\nT1\n{else}\nT0\n{endif}\nG92 E0\nG1 F200 E12\nG92 E0\nG1 F2400 E-1.5\nT{initial_extruder}\nG92 E0\nG1 F2400 E2\nG92 E0\nG1 F9000",
+    "machine_end_gcode": "M104 T0 S0\nM104 T1 S0\nM140 S0\nG91\nG1 E-1 F300\nG1 Z0.5 E-5 X-20 Y-20 F9000\nG28 X0 Y0\nM84\nG90\nM106 S255\nG4 S30\nM107",
+    "standby_temperature_delta": "-5",
+    "ooze_prevention": "1"
+}

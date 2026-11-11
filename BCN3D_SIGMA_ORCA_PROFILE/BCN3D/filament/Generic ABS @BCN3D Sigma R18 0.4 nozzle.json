@@ -1,0 +1,84 @@
+{
+    "type": "filament",
+    "name": "Generic ABS @BCN3D Sigma R18 0.4 nozzle",
+    "inherits": "Generic ABS @System",
+    "from": "system",
+    "setting_id": "BCN3D_SIGMA_R18_ABS_040",
+    "filament_id": "BCN3D_SIGMA_R18_ABS_040",
+    "instantiation": "true",
+    "compatible_printers": [
+        "BCN3D Sigma R18 0.4 nozzle"
+    ],
+    "filament_diameter": [
+        "2.85"
+    ],
+    "filament_max_volumetric_speed": [
+        "6"
+    ],
+    "filament_type": [
+        "ABS"
+    ],
+    "filament_vendor": [
+        "Generic"
+    ],
+    "filament_flow_ratio": [
+        "1"
+    ],
+    "filament_retract_restart_extra": [
+        "0"
+    ],
+    "filament_density": [
+        "1.04"
+    ],
+    "hot_plate_temp": [
+        "100"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "100"
+    ],
+    "nozzle_temperature": [
+        "250"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "255"
+    ],
+    "nozzle_temperature_range_low": [
+        "240"
+    ],
+    "nozzle_temperature_range_high": [
+        "260"
+    ],
+    "fan_min_speed": [
+        "0"
+    ],
+    "fan_max_speed": [
+        "20"
+    ],
+    "overhang_fan_speed": [
+        "30"
+    ],
+    "fan_cooling_layer_time": [
+        "15"
+    ],
+    "overhang_fan_threshold": [
+        "50%"
+    ],
+    "slow_down_for_layer_cooling": [
+        "1"
+    ],
+    "slow_down_layer_time": [
+        "12"
+    ],
+    "slow_down_min_speed": [
+        "15"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "close_fan_the_first_x_layers": [
+        "3"
+    ],
+    "filament_extruder_variant": [
+        "Direct Drive Standard"
+    ]
+}

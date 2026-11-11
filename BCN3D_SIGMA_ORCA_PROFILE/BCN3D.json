@@ -1,0 +1,58 @@
+{
+    "name": "BCN3D",
+    "version": "02.05.00.58",
+    "force_update": "0",
+    "description": "BCN3D Sigma R18 printer configuration",
+    "machine_model_list": [
+        {
+            "name": "BCN3D Sigma R18",
+            "sub_path": "machine/BCN3D Sigma R18.json"
+        }
+    ],
+    "machine_list": [
+        {
+            "name": "fdm_machine_common",
+            "sub_path": "machine/fdm_machine_common.json"
+        },
+        {
+            "name": "BCN3D Sigma R18 0.4 nozzle",
+            "sub_path": "machine/BCN3D Sigma R18 0.4 nozzle.json"
+        }
+    ],
+    "process_list": [
+        {
+            "name": "fdm_process_common",
+            "sub_path": "process/fdm_process_common.json"
+        },
+        {
+            "name": "0.06mm Extra Fine @BCN3D Sigma R18 0.4 nozzle",
+            "sub_path": "process/0.06mm Extra Fine @BCN3D Sigma R18 0.4 nozzle.json"
+        },
+        {
+            "name": "0.10mm Fine @BCN3D Sigma R18 0.4 nozzle",
+            "sub_path": "process/0.10mm Fine @BCN3D Sigma R18 0.4 nozzle.json"
+        },
+        {
+            "name": "0.15mm Normal @BCN3D Sigma R18 0.4 nozzle",
+            "sub_path": "process/0.15mm Normal @BCN3D Sigma R18 0.4 nozzle.json"
+        },
+        {
+            "name": "0.20mm Draft @BCN3D Sigma R18 0.4 nozzle",
+            "sub_path": "process/0.20mm Draft @BCN3D Sigma R18 0.4 nozzle.json"
+        }
+    ],
+    "filament_list": [
+        {
+            "name": "Generic PLA @BCN3D Sigma R18 0.4 nozzle",
+            "sub_path": "filament/Generic PLA @BCN3D Sigma R18 0.4 nozzle.json"
+        },
+        {
+            "name": "Generic ABS @BCN3D Sigma R18 0.4 nozzle",
+            "sub_path": "filament/Generic ABS @BCN3D Sigma R18 0.4 nozzle.json"
+        },
+        {
+            "name": "Generic PETG @BCN3D Sigma R18 0.4 nozzle",
+            "sub_path": "filament/Generic PETG @BCN3D Sigma R18 0.4 nozzle.json"
+        }
+    ]
+}

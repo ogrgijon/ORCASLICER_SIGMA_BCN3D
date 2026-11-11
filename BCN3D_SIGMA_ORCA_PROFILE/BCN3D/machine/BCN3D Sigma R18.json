@@ -1,0 +1,10 @@
+{
+    "type": "machine_model",
+    "name": "BCN3D Sigma R18",
+    "machine_tech": "FFF",
+    "family": "BCN3D",
+    "model_id": "BCN3D Sigma R18",
+    "nozzle_diameter": "0.4",
+    "bed_texture": "sigma_buildplate_texture.svg",
+    "default_materials": "Generic PLA @BCN3D Sigma R18 0.4 nozzle"
+}
