@@ -1,6 +1,6 @@
-# BCN3D Sigma R18 en OrcaSlicer
+# BCN3D Sigma en OrcaSlicer
 
-Perfiles de impresora para laminar modelos 3D con la **BCN3D Sigma R18** usando **OrcaSlicer**.
+Perfiles de impresora para laminar modelos 3D con las **BCN3D Sigma, Sigma R17, Sigma R18 y Sigma R19** usando **OrcaSlicer**.
 
 ![Impresora BCN3D Sigma R18](BCN3D_SIGMA_ORCA_PROFILE/V.2.05/BCN3D/BCN3D%20Sigma%20R18_cover.png)
 
@@ -14,7 +14,7 @@ Perfiles de impresora para laminar modelos 3D con la **BCN3D Sigma R18** usando 
 4. Pégalo dentro de la carpeta `resources\profiles` de OrcaSlicer.
    - En una instalación habitual de Windows: `C:\Program Files\OrcaSlicer\resources\profiles`
    - Si OrcaSlicer está instalado en otra ubicación, busca `resources\profiles` dentro de su carpeta de instalación.
-5. Reinicia OrcaSlicer y selecciona la **BCN3D Sigma R18**, la boquilla de **0,4 mm** y los perfiles de proceso y filamento que quieras usar.
+5. Reinicia OrcaSlicer y selecciona el perfil adecuado para tu modelo Sigma, la boquilla de **0,4 mm** y los perfiles de proceso y filamento que quieras usar.
 
 ## Perfiles incluidos
 
@@ -22,7 +22,7 @@ La versión actual incluye:
 
 | Tipo | Perfiles |
 |---|---|
-| Impresora | BCN3D Sigma R18, boquilla de 0,4 mm |
+| Impresora | BCN3D Sigma, Sigma R17, Sigma R18 y Sigma R19; boquilla de 0,4 mm |
 | Calidad de impresión | Extra Fine (0,06 mm), Fine (0,10 mm), Normal (0,15 mm), Draft (0,20 mm) |
 | Filamento | PLA, ABS y PETG genéricos |
 
@@ -50,4 +50,10 @@ BCN3D ha publicado recursos de hardware abierto de la Sigma. Este repositorio co
 
 ## Compatibilidad
 
-Los perfiles están preparados para la **BCN3D Sigma R18 con boquilla de 0,4 mm**. Si tu impresora tiene otra revisión o boquilla, revisa los parámetros antes de imprimir.
+Los perfiles están destinados a las **BCN3D Sigma, Sigma R17, Sigma R18 y Sigma R19**, con boquilla de **0,4 mm**. Comprueba que el perfil seleccionado corresponda exactamente a tu modelo y configuración.
+
+## Aviso importante
+
+Este es un proyecto comunitario de investigación y sus perfiles se proporcionan **tal cual**, sin garantía de que sean adecuados para cada impresora, revisión, material o modificación. Revisa y valida todos los parámetros frente a la documentación de tu impresora antes de usarlos. Una configuración incorrecta puede causar fallos de impresión o daños en la impresora, sus componentes o el material.
+
+Utiliza los perfiles bajo tu propia responsabilidad y supervisa las impresiones, especialmente las primeras pruebas. Este proyecto no está afiliado ni respaldado oficialmente por BCN3D.
